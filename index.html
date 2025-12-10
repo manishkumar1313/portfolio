@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourName - MERN Stack Developer & AI/ML Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        body { background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%); color: #e2e8f0; overflow-x: hidden; }
+        .glass { background: rgba(255,255,255,0.1); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.2); }
+        .neon-glow { box-shadow: 0 0 20px rgba(59, 130, 246, 0.5), inset 0 0 20px rgba(59, 130, 246, 0.1); }
+        .neon-green { box-shadow: 0 0 20px rgba(34, 197, 94, 0.5), inset 0 0 20px rgba(34, 197, 94, 0.1); }
+        .gradient-text { background: linear-gradient(45deg, #3b82f6, #10b981, #f59e0b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .card-hover { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .card-hover:hover { transform: translateY(-15px) scale(1.02); box-shadow: 0 25px 50px rgba(0,0,0,0.3); }
+        .stagger { animation: staggerIn 0.8s ease-out forwards; opacity: 0; transform: translateY(50px); }
+        .stagger:nth-child(1) { animation-delay: 0.1s; }
+        .stagger:nth-child(2) { animation-delay: 0.2s; }
+        .stagger:nth-child(3) { animation-delay: 0.3s; }
+        .stagger:nth-child(4) { animation-delay: 0.4s; }
+        @keyframes staggerIn { to { opacity: 1; transform: translateY(0); } }
+        .timeline-item { position: relative; }
+        .timeline-item::before { content: ''; position: absolute; left: 20px; top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom, #3b82f6, #10b981); }
+        .timeline-dot { position: absolute; left: 15px; width: 12px; height: 12px; background: linear-gradient(45deg, #3b82f6, #10b981); border-radius: 50%; box-shadow: 0 0 15px rgba(59,130,246,0.5); }
+        @media (max-width: 768px) { .timeline-dot { left: 10px; } .timeline-item::before { left: 15px; } }
+    </style>
+</head>
+<body class="min-h-screen p-8 lg:p-16">
+    <!-- Hero Section -->
+    <section class="text-center py-24 mb-20">
+        <div class="glass rounded-3xl p-12 max-w-4xl mx-auto neon-glow mb-8">
+            <img src="C:\Users\manish\OneDrive\Pictures\Saved Pictures\1758378246546.jpg" alt="Profile" class="w-32 h-32 rounded-full mx-auto mb-6 glass border-4 border-white/20 neon-glow">
+            <h1 class="text-5xl lg:text-7xl font-bold gradient-text mb-4">MANISH KUMAR</h1>
+            <p class="text-xl lg:text-2xl text-white/80 mb-8">MERN Stack Developer & AI/ML Engineer</p>
+            <p class="text-lg text-white/60 max-w-2xl mx-auto">Building scalable web apps with React, Node.js, and deploying intelligent ML models that drive real impact. Passionate about clean code, performance, and futuristic designs.</p>
+        </div>
+        <div class="flex justify-center space-x-6">
+            <a href="https://github.com/yourusername" target="_blank" class="glass px-6 py-3 rounded-full neon-glow hover:scale-110 transition-all duration-300">
+                <i class="fab fa-github mr-2"></i> GitHub
+            </a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" class="glass px-6 py-3 rounded-full neon-green hover:scale-110 transition-all duration-300">
+                <i class="fab fa-linkedin mr-2"></i> LinkedIn
+            </a>
+            <a href="resume.pdf" download class="glass px-6 py-3 rounded-full neon-glow hover:scale-110 transition-all duration-300">
+                <i class="fas fa-file-pdf mr-2"></i> Resume
+            </a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="mb-24">
+        <h2 class="text-4xl font-bold gradient-text text-center mb-16">Featured Projects</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div class="glass p-8 rounded-2xl card-hover stagger">
+                <div class="flex items-start space-x-4 mb-6">
+                    <div class="neon-glow p-3 rounded-xl bg-gradient-to-r from-blue-500/20 to-indigo-500/20">
+                        <i class="fas fa-store text-2xl text-blue-400"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-white mb-2">E-Commerce Platform</h3>
+                        <p class="text-blue-400 font-medium mb-1">Full-stack MERN App</p>
+                        <div class="flex space-x-2 text-sm text-white/70">
+                            <span>React</span><span>Node.js</span><span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-white/80 mb-6">Scalable shopping platform with real-time inventory, secure payments, and admin dashboard. Optimized for 10k+ concurrent users.</p>
+                <div class="flex space-x-4">
+                    <a href="https://github.com/yourusername/ecommerce" target="_blank" class="glass px-4 py-2 rounded-lg text-sm hover:neon-glow transition-all">GitHub</a>
+                    <a href="https://ecommerce.yourdomain.com" target="_blank" class="glass px-4 py-2 rounded-lg text-sm bg-gradient-to-r from-blue-500/20 hover:from-blue-500/30 transition-all">Live Demo</a>
+                </div>
+            </div>
+            <div class="glass p-8 rounded-2xl card-hover stagger">
+                <div class="flex items-start space-x-4 mb-6">
+                    <div class="neon-green p-3 rounded-xl bg-gradient-to-r from-green-500/20 to-emerald-500/20">
+                        <i class="fas fa-brain text-2xl text-green-400"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-white mb-2">AI Image Classifier</h3>
+                        <p class="text-green-400 font-medium mb-1">ML Model Dashboard</p>
+                        <div class="flex space-x-2 text-sm text-white/70">
+                            <span>TensorFlow</span><span>React</span><span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-white/80 mb-6">Computer vision model achieving 97% accuracy on CIFAR-10. Interactive dashboard for model predictions and metrics visualization.</p>
+                <div class="flex space-x-4">
+                    <a href="https://github.com/yourusername/ai-classifier" target="_blank" class="glass px-4 py-2 rounded-lg text-sm hover:neon-green transition-all">GitHub</a>
+                    <a href="https://ai.yourdomain.com" target="_blank" class="glass px-4 py-2 rounded-lg text-sm bg-gradient-to-r from-green-500/20 hover:from-green-500/30 transition-all">Live Demo</a>
+                </div>
+            </div>
+            <div class="glass p-8 rounded-2xl card-hover stagger">
+                <div class="flex items-start space-x-4 mb-6">
+                    <div class="neon-glow p-3 rounded-xl bg-gradient-to-r from-purple-500/20 to-violet-500/20">
+                        <i class="fas fa-tasks text-2xl text-purple-400"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-white mb-2">Task Management SaaS</h3>
+                        <p class="text-purple-400 font-medium mb-1">Real-time Collaboration</p>
+                        <div class="flex space-x-2 text-sm text-white/70">
+                            <span>Socket.io</span><span>MongoDB</span><span>Express</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-white/80 mb-6">Real-time collaborative task manager with drag-drop kanban, role-based auth, and PWA support. Deployed on AWS with 99.9% uptime.</p>
+                <div class="flex space-x-4">
+                    <a href="https://github.com/yourusername/taskmanager" target="_blank" class="glass px-4 py-2 rounded-lg text-sm hover:neon-glow transition-all">GitHub</a>
+                    <a href="https://tasks.yourdomain.com" target="_blank" class="glass px-4 py-2 rounded-lg text-sm bg-gradient-to-r from-purple-500/20 hover:from-purple-500/30 transition-all">Live Demo</a>
+                </div>
+            </div>
+            <div class="glass p-8 rounded-2xl card-hover stagger">
+                <div class="flex items-start space-x-4 mb-6">
+                    <div class="neon-glow p-3 rounded-xl bg-gradient-to-r from-orange-500/20 to-amber-500/20">
+                        <i class="fas fa-chart-line text-2xl text-orange-400"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-white mb-2">Analytics Dashboard</h3>
+                        <p class="text-orange-400 font-medium mb-1">Data Visualization</p>
+                        <div class="flex space-x-2 text-sm text-white/70">
+                            <span>Recharts</span><span>Node.js</span><span>Java DSA</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-white/80 mb-6">Interactive analytics dashboard processing 1M+ data points with optimized Java backend algorithms and responsive React charts.</p>
+                <div class="flex space-x-4">
+                    <a href="https://github.com/yourusername/analytics" target="_blank" class="glass px-4 py-2 rounded-lg text-sm hover:neon-glow transition-all">GitHub</a>
+                    <a href="https://analytics.yourdomain.com" target="_blank" class="glass px-4 py-2 rounded-lg text-sm bg-gradient-to-r from-orange-500/20 hover:from-orange-500/30 transition-all">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="mb-24">
+        <h2 class="text-4xl font-bold gradient-text text-center mb-16">Experience Timeline</h2>
+        <div class="max-w-4xl mx-auto space-y-12">
+            <div class="timeline-item pl-20 relative">
+                <div class="timeline-dot" style="top: 20px;"></div>
+                <div class="glass p-8 rounded-2xl ml-8">
+                    <div class="flex items-center mb-4">
+                        <div class="neon-green w-3 h-3 rounded-full mr-4"></div>
+                        <span class="text-sm text-green-400 font-medium">Present - AI/ML Engineer</span>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">TechCorp Innovations</h3>
+                    <ul class="space-y-2 text-white/80">
+                        <li>• Deployed production ML models serving 50k+ predictions daily with 99.8% accuracy</li>
+                        <li>• Architected MERN stack microservices handling 100k+ API requests/hour</li>
+                        <li>• Optimized Java DSA algorithms reducing processing time by 65%</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item pl-20 relative">
+                <div class="timeline-dot" style="top: 10px;"></div>
+                <div class="glass p-8 rounded-2xl ml-8">
+                    <div class="flex items-center mb-4">
+                        <div class="neon-glow w-3 h-3 rounded-full mr-4"></div>
+                        <span class="text-sm text-blue-400 font-medium">2023 - 2025</span>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Full Stack Developer</h3>
+                    <ul class="space-y-2 text-white/80">
+                        <li>• Led development of 5+ production MERN applications with 98% client satisfaction</li>
+                        <li>• Implemented real-time features using Socket.io and Redis caching</li>
+                        <li>• Migrated legacy systems to microservices architecture</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item pl-20 relative">
+                <div class="timeline-dot" style="top: 15px;"></div>
+                <div class="glass p-8 rounded-2xl ml-8">
+                    <div class="flex items-center mb-4">
+                        <div class="neon-green w-3 h-3 rounded-full mr-4"></div>
+                        <span class="text-sm text-green-400 font-medium">2022 - 2023</span>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Software Engineering Intern</h3>
+                    <ul class="space-y-2 text-white/80">
+                        <li>• Built scalable REST APIs with Node.js/Express serving 10k+ users</li>
+                        <li>• Developed React components reused across 3 enterprise applications</li>
+                        <li>• Implemented MongoDB aggregation pipelines optimizing queries by 80%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements & Certificates -->
+    <section id="achievements" class="mb-24">
+        <h2 class="text-4xl font-bold gradient-text text-center mb-16">Achievements & Certifications</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div class="glass p-8 rounded-2xl text-center hover:scale-105 transition-all duration-300 stagger">
+                <i class="fas fa-certificate text-4xl text-yellow-400 mb-4 mx-auto"></i>
+                <h3 class="text-xl font-semibold mb-2">AWS Certified Developer</h3>
+                <p class="text-white/70 text-sm mb-4">Associate Level - Expires 2027</p>
+                <a href="#" class="text-blue-400 hover:underline text-sm">View Certificate</a>
+            </div>
+            <div class="glass p-8 rounded-2xl text-center hover:scale-105 transition-all duration-300 stagger">
+                <i class="fas fa-trophy text-4xl text-orange-400 mb-4 mx-auto"></i>
+                <h3 class="text-xl font-semibold mb-2">Hackathon Winner</h3>
+                <p class="text-white/70 text-sm mb-4">National Tech Fest 2024</p>
+                <a href="#" class="text-blue-400 hover:underline text-sm">Details</a>
+            </div>
+            <div class="glass p-8 rounded-2xl text-center hover:scale-105 transition-all duration-300 stagger">
+                <i class="fas fa-star text-4xl text-yellow-400 mb-4 mx-auto"></i>
+                <h3 class="text-xl font-semibold mb-2">Google ML Crash Course</h3>
+                <p class="text-white/70 text-sm mb-4">Completed with Distinction</p>
+                <a href="#" class="text-blue-400 hover:underline text-sm">View Certificate</a>
+            </div>
+            <div class="glass p-8 rounded-2xl text-center hover:scale-105 transition-all duration-300 stagger">
+                <i class="fas fa-medal text-4xl text-purple-400 mb-4 mx-auto"></i>
+                <h3 class="text-xl font-semibold mb-2">Top 1% LeetCode</h3>
+                <p class="text-white/70 text-sm mb-4">1500+ problems solved</p>
+                <a href="https://leetcode.com/yourusername" target="_blank" class="text-blue-400 hover:underline text-sm">Profile</a>
+            </div>
+            <div class="glass p-8 rounded-2xl text-center hover:scale-105 transition-all duration-300 stagger">
+                <i class="fas fa-award text-4xl text-green-400 mb-4 mx-auto"></i>
+                <h3 class="text-xl font-semibold mb-2">React Certification</h3>
+                <p class="text-white/70 text-sm mb-4">Meta Front-End Developer</p>
+                <a href="#" class="text-blue-400 hover:underline text-sm">View Certificate</a>
+            </div>
+            <div class="glass p-8 rounded-2xl text-center hover:scale-105 transition-all duration-300 stagger">
+                <i class="fas fa-graduation-cap text-4xl text-indigo-400 mb-4 mx-auto"></i>
+                <h3 class="text-xl font-semibold mb-2">B.Tech Computer Science</h3>
+                <p class="text-white/70 text-sm mb-4">9.2 CGPA • 2025</p>
+                <span class="px-3 py-1 bg-gradient-to-r from-indigo-500/20 to-purple-500/20 rounded-full text-xs">Dean’s List</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="text-center py-24">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-4xl font-bold gradient-text mb-8">Let's Build Something Amazing</h2>
+            <p class="text-xl text-white/80 mb-12">Open to exciting opportunities in MERN development and AI/ML engineering. Let's create the future together.</p>
+            <div class="glass p-8 rounded-3xl mb-8">
+                <div class="grid md:grid-cols-2 gap-6 text-left">
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-envelope text-2xl neon-glow mr-4"></i>
+                            <span class="font-medium">yourname@email.com</span>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-phone text-2xl neon-green mr-4"></i>
+                            <span class="font-medium">+91 9876543210</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-map-marker-alt text-2xl neon-glow mr-4"></i>
+                            <span class="font-medium">Bangalore, India</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-globe text-2xl neon-green mr-4"></i>
+                            <span class="font-medium">Available Worldwide</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="glass p-8 rounded-3xl max-w-2xl mx-auto space-y-6">
+                <input type="text" placeholder="Your Name" class="w-full p-4 rounded-xl bg-white/5 border border-white/20 focus:outline-none focus:border-blue-400 transition-all">
+                <input type="email" placeholder="Your Email" class="w-full p-4 rounded-xl bg-white/5 border border-white/20 focus:outline-none focus:border-blue-400 transition-all">
+                <textarea placeholder="Your Message" rows="5" class="w-full p-4 rounded-xl bg-white/5 border border-white/20 focus:outline-none focus:border-blue-400 transition-all resize-none"></textarea>
+                <button type="submit" class="w-full glass py-4 px-8 rounded-2xl font-semibold text-lg neon-glow hover:scale-105 transition-all duration-300 bg-gradient-to-r from-blue-500/20 hover:from-blue-500/30">
+                    Send Message <i class="fas fa-paper-plane ml-2"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-12 border-t border-white/10">
+        <p class="text-white/60">&copy; 2025 YourName. Built with ❤️ using MERN Stack. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Form submission (demo)
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you! Your message has been sent. (Demo)');
+        });
+
+        // Navbar scroll effect (add if you want sticky nav)
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY > 50;
+            document.body.style.background = scrolled 
+                ? 'linear-gradient(135deg, rgba(15,15,35,0.95) 0%, rgba(26,26,46,0.95) 50%, rgba(22,33,62,0.95) 100%)'
+                : 'linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%)';
+        });
+    </script>
+</body>
+</html>
